@@ -1,0 +1,108 @@
+body{
+    background-color: hsla(180, 2%, 63%, 0.418);;
+    border: 3px solid rgb(240, 84, 12);
+    border-radius: 40px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-left-color: rgb(10, 67, 223);
+    border-right-color: rgb(10, 67, 223);
+    border-bottom-color: green;
+    /* border-style: dotted; */
+    padding-bottom: 40px;     
+    transition-duration: 1000ms;    
+    transform-style: preserve-3d; 
+}
+.dark-mode {
+    background-color: rgb(39, 38, 38);
+    color: #ffffffbe;
+}
+#mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 30px ;
+}
+/* #user_data{
+    color: orange;
+    border: 1px solid;
+    border-collapse: collapse;
+} */
+table {
+    width: 50%;   /* columns width */
+    margin: 100px auto;  /* set table at center*/
+    border-collapse: collapse;
+}
+table:hover {
+    width: 70%;   /* columns width */
+    margin: 100px auto;  /* set table at center*/
+    border-collapse: collapse;
+    box-shadow: 0 5px 5px #f01414;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #9f83b6;
+}
+
+th {
+    background-color: #6ead08;
+}
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-color: orangered;
+  }
+  th, td {
+    background-color: aqua;
+    
+  } */
+
+  /* ul{
+    list-style-type: lower-roman;
+  } */
+   ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    /* margin-right: 70%; */
+    width: 100%;
+    
+    
+    
+   }
+   li {
+    float: left;
+    width: 50%;
+    
+     
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    
+    
+  }
+  li a:hover{
+    background-color: #b1b0b0;
+  }
+  .frame{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+  .frame iframe{
+    border: none;
+    width: 100%;
+    height: 10cm;
+  }
