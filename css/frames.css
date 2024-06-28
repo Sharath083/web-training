@@ -1,0 +1,67 @@
+body{
+    /* background-image: url('../images/dmst.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
+
+    background-color:  rgb(198, 201, 201);
+    font-family: 'Times New Roman', Times, serif;
+    border:2px solid rgb(221, 138, 28);
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-radius: 35px;  
+    padding-bottom: 40px;  
+    transition-duration: 1000ms;           
+}
+.frame{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+  .frame iframe{
+    border: none;
+    width: 100%;
+    height: 10cm;
+    margin: auto;
+  }
+  .block-container:hover{
+    float: right;
+    
+
+  }
+  .block-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 10px;
+    font-size: 10px;
+    background-color: burlywood;
+
+}
+
+#stickman{
+    width: 80%; 
+    height: 15cm; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1cm;
+
+}
+.stick_cointainer button{
+    padding: 20px 20px;
+    font-size: 15px;
+    background-color: burlywood;
+    border-radius: 30px ;
+}
+.stick_cointainer{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
