@@ -1,0 +1,23 @@
+
+/* styles.css */
+@keyframes beepColors {
+    0% { color: blue; background-color: rgb(110, 110, 4);}
+    16% { color: rgb(110, 110, 4);background-color: green; }
+    32% { color: green; background-color: rgb(0, 238, 255);;}
+    64% { color: rgb(0, 238, 255);background-color: red; }
+    84% { color: red;background-color: blue; }
+    100% { color: blue;background-color: rgb(110, 110, 4); }
+  }
+  
+  #time {
+    font-size: 10em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 17%;
+    animation: beepColors 2ms infinite;
+  }
+  body{
+    animation: beepColors 2ms infinite;
+
+  }
+  

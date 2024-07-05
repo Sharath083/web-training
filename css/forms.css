@@ -1,0 +1,44 @@
+.reg_cointainer input{
+    margin-left: 30%;
+    margin-bottom: 0.5cm;
+    
+
+}
+.reg_cointainer  label{
+    color: hwb(0 5% 5% / 0.5);
+    font-size: large;
+    margin-bottom: 5cm;
+
+
+    
+}
+body{
+    width: 1000px; /* Total width of the sprite sheet */
+    height: 100px; /* Height of the sprite sheet */
+    background: url('../images/background_dms.jfif') left center;
+    animation: play 1s steps(10) infinite;
+  
+}
+@keyframes play {
+    from { background-position: 0; }
+    to { background-position: -1000px; } /* Total width of the sprite sheet */
+  }
+.reg_cointainer{
+    margin-top: 3cm;
+}
+body{
+    /* background-image: url('../images/dmst.jfif'); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /* background-color: rgb(124, 122, 122); */
+
+    /* background-color:  rgb(198, 201, 201);
+    font-family: 'Times New Roman', Times, serif;
+    border:2px solid rgb(221, 138, 28);
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-radius: 35px;  
+    padding-bottom: 40px;  
+    transition-duration: 1000ms;            */
+}
