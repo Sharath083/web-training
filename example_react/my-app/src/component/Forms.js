@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 class Forms extends Component {
   constructor(props) {
@@ -27,10 +26,13 @@ class Forms extends Component {
   handleMobileNumber = (event) => {
     this.setState({ mobileNumber: event.target.value });
   };
-
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    alert(this.state);
+  };
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label>UserName : </label>
           <input
@@ -96,11 +98,15 @@ class Forms extends Component {
           <label>Mobile Number</label>
           <input
             type="tel"
-            value={this.state.MobileNumber}
-            pattern="[0-9]{3}-[0-9]{7}"
+            value={this.state.mobileNumber}
+            // pattern="[6-9]{1}-[0-9]{9}"
             onChange={this.handleMobileNumber}
             maxLength={10}
+            required={true}
           />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
         </div>
       </form>
     );
