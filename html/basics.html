@@ -2,19 +2,34 @@
 <html>
     
     <head style="color: white;">
-        <title>
+        <title style="color: black; font-size: xx-large;">
             Basics 1
         </title>
-        <h1 style="color: wheat;">First H1 25/06/24</h1>
+        
+
+    </head>
+    <body style="background-color: rgb(113, 190, 12);">
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = 
+            "navigator.appCodeName is " + navigator.appCodeName;
+        </script>
+        <p id="demo1"></p>
+
+        <script>
+        document.getElementById("demo1").innerHTML =
+        navigator.userAgent;
+        </script>
+        
+        <h1 id="section1" style="color: wheat;">First H1 25/06/24</h1>
 
         <link rel="stylesheet" href="../css/styles.css">
 
         <link rel="icon" type="image/x-icon" href="../images/load.ico">
-
-    </head>
-    <body style="background-color: rgb(113, 190, 12);">
         <h2 style="font-size: 40px;color:white;"> 
             Links and images</h2>
+
 
         <a href="file:///D:/web/html/basics2.html" target="_blank"> google.com</a>
 
@@ -89,6 +104,7 @@ with a metropolitan area of over 13 million inhabitants.
 
 
         <p>Here is a quote from WWF's website:</p>
+        <a href="#section1">Go to Top of page</a>
 
 
 
